@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./test.yaml
+      - uses: ./.github/workflows/test.yaml
 
   deploy:
     runs-on: ubuntu-latest
