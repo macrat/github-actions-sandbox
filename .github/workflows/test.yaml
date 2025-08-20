@@ -1,0 +1,20 @@
+name: CI Test
+
+on:
+  workflow_call:
+  push:
+    branches:
+      - "!main"
+
+jobs:
+  test_a:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing A..."
+      - run: echo "Test A complete!"
+
+  test_b:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testing B..."
+      - run: echo "Test B complete!"
